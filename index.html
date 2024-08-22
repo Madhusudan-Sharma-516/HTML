@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tags Reference</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .tag-container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .tag {
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .tag-name {
+        font-weight: bold;
+        color: #2c3e50;
+        font-size: 1.2em;
+      }
+
+      .tag-description {
+        margin: 10px 0;
+        color: #555;
+      }
+
+      .code-block {
+        background-color: #2d2d2d;
+        color: #f8f8f2;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 15px;
+        font-family: "Courier New", monospace;
+        overflow-x: auto;
+      }
+
+      .output-box {
+        margin-top: 15px;
+        padding: 15px;
+        background-color: #e8e8e8;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>HTML Tags Reference</h1>
+    <div class="tag-container">
+      <!-- !DOCTYPE -->
+      <div class="tag">
+        <span class="tag-name">&lt;!DOCTYPE&gt;</span>
+        <div class="tag-description">
+          Defines the document type and version of HTML.
+        </div>
+        <div class="code-block">&lt;!DOCTYPE html&gt;</div>
+        <div class="output-box">
+          <!DOCTYPE html>
+        </div>
+      </div>
+
+      <!-- Anchor Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;a&gt;</span>
+        <div class="tag-description">
+          Defines a hyperlink to link one page to another.
+        </div>
+        <div class="code-block">
+          &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+        </div>
+        <div class="output-box">
+          <a href="https://example.com">Visit Example</a>
+        </div>
+      </div>
+
+      <!-- Abbreviation Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;abbr&gt;</span>
+        <div class="tag-description">Defines an abbreviation or acronym.</div>
+        <div class="code-block">
+          &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+        </div>
+        <div class="output-box">
+          <abbr title="HyperText Markup Language">HTML</abbr>
+        </div>
+      </div>
+
+      <!-- Address Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;address&gt;</span>
+        <div class="tag-description">
+          Defines contact information for the author or owner of a document.
+        </div>
+        <div class="code-block">
+          &lt;address&gt;<br />
+          123 Main St,<br />
+          Anytown, USA<br />
+          &lt;/address&gt;
+        </div>
+        <div class="output-box">
+          <address>
+            123 Main St,<br />
+            Anytown, USA
+          </address>
+        </div>
+      </div>
+
+      <!-- Area Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;area&gt;</span>
+        <div class="tag-description">Defines an area inside an image map.</div>
+        <div class="code-block">
+          &lt;map name="map1"&gt;<br />
+          &lt;area shape="rect" coords="34,44,270,350"
+          href="https://example.com" alt="Example"&gt;<br />
+          &lt;/map&gt;
+        </div>
+        <div class="output-box">
+          <map name="map1">
+            <area
+              shape="rect"
+              coords="34,44,270,350"
+              href="https://example.com"
+              alt="Example"
+            />
+          </map>
+        </div>
+      </div>
+
+      <!-- Article Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;article&gt;</span>
+        <div class="tag-description">
+          Defines an article or self-contained piece of content.
+        </div>
+        <div class="code-block">
+          &lt;article&gt;<br />
+          &lt;h2&gt;Article Heading&lt;/h2&gt;<br />
+          &lt;p&gt;This is an article.&lt;/p&gt;<br />
+          &lt;/article&gt;
+        </div>
+        <div class="output-box">
+          <article>
+            <h2>Article Heading</h2>
+            <p>This is an article.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Bold Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;b&gt;</span>
+        <div class="tag-description">Defines bold text.</div>
+        <div class="code-block">&lt;b&gt;This is bold text.&lt;/b&gt;</div>
+        <div class="output-box">
+          <b>This is bold text.</b>
+        </div>
+      </div>
+
+      <!-- Blockquote Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;blockquote&gt;</span>
+        <div class="tag-description">
+          Defines a section that is quoted from another source.
+        </div>
+        <div class="code-block">
+          &lt;blockquote&gt;<br />
+          &lt;p&gt;This is a blockquote.&lt;/p&gt;<br />
+          &lt;/blockquote&gt;
+        </div>
+        <div class="output-box">
+          <blockquote>
+            <p>This is a blockquote.</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Body Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;body&gt;</span>
+        <div class="tag-description">
+          Defines the body of the HTML document.
+        </div>
+        <div class="code-block">
+          &lt;body&gt;<br />
+          &lt;p&gt;This is the body content.&lt;/p&gt;<br />
+          &lt;/body&gt;
+        </div>
+        <div class="output-box">
+          <body>
+            <p>This is the body content.</p>
+          </body>
+        </div>
+      </div>
+
+      <!-- Line Break Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;br&gt;</span>
+        <div class="tag-description">Inserts a single line break.</div>
+        <div class="code-block">Line 1&lt;br&gt;Line 2</div>
+        <div class="output-box">Line 1<br />Line 2</div>
+      </div>
+
+      <!-- Button Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;button&gt;</span>
+        <div class="tag-description">Defines a clickable button.</div>
+        <div class="code-block">&lt;button&gt;Click Me&lt;/button&gt;</div>
+        <div class="output-box">
+          <button>Click Me</button>
+        </div>
+      </div>
+
+      <!-- Caption Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;caption&gt;</span>
+        <div class="tag-description">Defines a table caption.</div>
+        <div class="code-block">
+          &lt;table&gt;<br />
+          &lt;caption&gt;Table Caption&lt;/caption&gt;<br />
+          &lt;tr&gt;&lt;td&gt;Cell 1&lt;/td&gt;&lt;td&gt;Cell
+          2&lt;/td&gt;&lt;/tr&gt;<br />
+          &lt;/table&gt;
+        </div>
+        <div class="output-box">
+          <table border="1">
+            <caption>
+              Table Caption
+            </caption>
+            <tr>
+              <td>Cell 1</td>
+              <td>Cell 2</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- Code Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;code&gt;</span>
+        <div class="tag-description">Defines a piece of computer code.</div>
+        <div class="code-block">
+          &lt;code&gt;console.log('Hello World');&lt;/code&gt;
+        </div>
+        <div class="output-box">
+          <code>console.log('Hello World');</code>
+        </div>
+      </div>
+
+      <!-- Div Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;div&gt;</span>
+        <div class="tag-description">
+          Defines a division or section in an HTML document.
+        </div>
+        <div class="code-block">&lt;div&gt;This is a div.&lt;/div&gt;</div>
+        <div class="output-box">
+          <div>This is a div.</div>
+        </div>
+      </div>
+
+      <!-- Unordered List Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;ul&gt;</span>
+        <div class="tag-description">Defines an unordered (bulleted) list.</div>
+        <div class="code-block">
+          &lt;ul&gt;<br />
+          &lt;li&gt;Item 1&lt;/li&gt;<br />
+          &lt;li&gt;Item 2&lt;/li&gt;<br />
+          &lt;/ul&gt;
+        </div>
+        <div class="output-box">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Additional tags can be added following the same format -->
+      <!-- Example for form tags, table tags, etc. -->
+    </div>
+  </body>
+</html>
