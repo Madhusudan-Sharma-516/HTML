@@ -52,6 +52,9 @@
         font-family: "Courier New", monospace;
         overflow-x: auto;
       }
+      pre {
+        font-size: 1rem;
+      }
 
       .output-box {
         margin-top: 15px;
@@ -68,11 +71,23 @@
     <div class="tag-container">
       <!-- !DOCTYPE -->
       <div class="tag">
-        <span class="tag-name">&lt;!DOCTYPE&gt;</span>
+        <span class="tag-name">Boiler plate code</span>
         <div class="tag-description">
           Defines the document type and version of HTML.
         </div>
-        <div class="code-block">&lt;!DOCTYPE html&gt;</div>
+        <div class="code-block">
+          <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt; demo &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre
+          >
+        </div>
         <div class="output-box">
           <!DOCTYPE html>
         </div>
@@ -194,21 +209,27 @@
         </div>
       </div>
 
-      <!-- Body Tag -->
+      <!-- input Tag -->
       <div class="tag">
-        <span class="tag-name">&lt;body&gt;</span>
+        <span class="tag-name">&lt;input&gt;</span>
         <div class="tag-description">
-          Defines the body of the HTML document.
+          Creates an interactive control for user data input.
         </div>
         <div class="code-block">
-          &lt;body&gt;<br />
-          &lt;p&gt;This is the body content.&lt;/p&gt;<br />
-          &lt;/body&gt;
+          &lt;input type="text" placeholder="enter text here" /&gt;
         </div>
         <div class="output-box">
-          <body>
-            <p>This is the body content.</p>
-          </body>
+          <input type="text" placeholder="enter text here" />
+        </div>
+      </div>
+
+      <!-- textarea Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;textarea&gt;</span>
+        <div class="tag-description">Creates a multiline input field.</div>
+        <div class="code-block">&lt;textarea&gt;&lt;/textarea&gt;</div>
+        <div class="output-box">
+          <textarea></textarea>
         </div>
       </div>
 
@@ -230,15 +251,21 @@
         </div>
       </div>
 
-      <!-- Caption Tag -->
+      <!-- table and caption Tag -->
       <div class="tag">
-        <span class="tag-name">&lt;caption&gt;</span>
+        <span class="tag-name">&lt;table&gt; and &lt;caption&gt;</span>
         <div class="tag-description">Defines a table caption.</div>
         <div class="code-block">
           &lt;table&gt;<br />
           &lt;caption&gt;Table Caption&lt;/caption&gt;<br />
-          &lt;tr&gt;&lt;td&gt;Cell 1&lt;/td&gt;&lt;td&gt;Cell
-          2&lt;/td&gt;&lt;/tr&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Cell 1&lt;/th&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Cell 2&lt;/th&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Cell 3&lt;/td&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Cell 4&lt;/td&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
           &lt;/table&gt;
         </div>
         <div class="output-box">
@@ -247,8 +274,12 @@
               Table Caption
             </caption>
             <tr>
-              <td>Cell 1</td>
-              <td>Cell 2</td>
+              <th>Cell 1</th>
+              <th>Cell 2</th>
+            </tr>
+            <tr>
+              <td>Cell 3</td>
+              <td>Cell 4</td>
             </tr>
           </table>
         </div>
@@ -284,20 +315,75 @@
         <div class="tag-description">Defines an unordered (bulleted) list.</div>
         <div class="code-block">
           &lt;ul&gt;<br />
-          &lt;li&gt;Item 1&lt;/li&gt;<br />
-          &lt;li&gt;Item 2&lt;/li&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br />
           &lt;/ul&gt;
         </div>
         <div class="output-box">
           <ul>
             <li>Item 1</li>
             <li>Item 2</li>
+            <li>Item 3</li>
           </ul>
         </div>
       </div>
 
-      <!-- Additional tags can be added following the same format -->
-      <!-- Example for form tags, table tags, etc. -->
+      <!-- Ordered List Tag -->
+      <div class="tag">
+        <span class="tag-name">&lt;ol&gt;</span>
+        <div class="tag-description">Defines an Ordered (bulleted) list.</div>
+        <div class="code-block">
+          &lt;ol&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br />
+          &lt;/ol&gt;
+        </div>
+        <div class="output-box">
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+        </div>
+      </div>
+      <!-- sub and super script -->
+      <div class="tag">
+        <span class="tag-name">&lt;sup&gt; and &lt;sub&gt;</span>
+        <div class="tag-description">
+          Defines superscript and subscript text.
+        </div>
+        <div class="code-block">
+          &lt;p&gt;h&lt;sub&gt;2&lt;/sub&gt;O and
+          a&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+        </div>
+        <div class="output-box">
+          <p>h<sub>2</sub>O and a<sup>2</sup></p>
+        </div>
+      </div>
+
+      <!-- select -->
+      <div class="tag">
+        <span class="tag-name">&lt;select&gt; and &lt;option&gt;</span>
+        <div class="tag-description">
+          Creates a dropdown list for selecting options.
+        </div>
+        <div class="code-block">
+          &lt;select name="data" id="data"&gt; <br />
+          &nbsp;&nbsp;&nbsp;&lt;option value="1"&gt;1&lt;/option&gt; <br />
+          &nbsp;&nbsp;&nbsp;&lt;option value="2"&gt;2&lt;/option&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;option value="3"&gt;3&lt;/option&gt;<br />
+          &lt;/select&gt;
+        </div>
+        <div class="output-box">
+          <select name="data" id="data">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+      </div>
     </div>
   </body>
 </html>
